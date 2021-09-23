@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.body {
+    background: url("src/SnakePassfree.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox {
+    position: absolute;
+    color: rgb(247, 38, 38);
+    font-family: 'Gluten', cursive;
+    top: 9px;
+    right: 400px;
+    font-size: 34px;
+    font: bolder;
+}
+
+#HighscoreBox {
+    position: absolute;
+    top: 29px;
+    right: 100px;
+    color: rgb(16, 12, 221);
+    font-family: 'Gluten', cursive;
+    top: 9px;
+    font-size: 34px;
+    font: bolder;
+}
+
+#board {
+    /* background: url("board.jpg");
+        background-repeat: no-repeat; */
+    /* background-size: 90vw 90vh; */
+    background: linear-gradient(#1b521e, #787c78);
+    width: 80vmin;
+    height: 85vmin;
+    border: 2px solid black;
+    box-shadow: 5px 5px 6px #08ee26;
+    position: absolute;
+    left: 40%;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    /* background-color: brown; */
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.snake {
+    background-color: brown;
+    border: .25vmin solid rgb(241, 226, 10);
+    border-radius: 50%;
+}
+
+@keyframes flexible {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotateY(360deg);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.food {
+    /* background: url("food.png"); */
+    /* background-color: linear-gradient(#8bc34a, #146ced); */
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    animation-name: flexible;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    perspective: 10000px;
+    transform-style: preserve-3d;
+    animation-iteration-count: infinite;
+    /* background-color: chocolate; */
+}
