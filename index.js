@@ -168,4 +168,27 @@ window.addEventListener('keydown', e => {
     }
 
 });
+function calculate(data) {
+    switch (data) {
+        case "up":
+            inputDir.x = 0;
+            inputDir.y = -1;
+            break;
+        case "down":
+            inputDir.x = 0;
+            inputDir.y = 1;
+            break;
+        case "right":
+            inputDir.x = 1;
+            inputDir.y = 0;
+
+            break;
+        case "left":
+            inputDir.x = -1;
+            inputDir.y = 0;
+            break;
+        default:
+
+    }
+}
 
