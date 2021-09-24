@@ -93,38 +93,3 @@
     animation-iteration-count: infinite;
     /* background-color: chocolate; */
 }
-.up {
-    border: 4px solid blue;
-    background-color: white;
-    margin: 4px;
-    padding: 20px;
-    text-align: center;
-}
-
-.down {
-    border: 4px solid blue;
-    background-color: white;
-    margin: 4px;
-    padding: 20px;
-    text-align: center;
-}
-
-.left {
-    border: 4px solid blue;
-    background-color: white;
-    margin: 4px;
-    padding: 10px;
-    text-align: left;
-    display: inline-block;
-    width: 160px
-}
-
-.right {
-    border: 4px solid blue;
-    background-color: cornsilk;
-    margin: 4px;
-    padding: 10px;
-    display: inline-block;
-    text-align: right;
-    width: 160px;
-}
