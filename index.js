@@ -168,3 +168,71 @@ window.addEventListener('keydown', e => {
     }
 
 });
+
+
+
+let pageWidth = window.innerWidth || document.body.clientWidth;
+let treshold = Math.max(1, Math.floor(0.01 * (pageWidth)));
+let touchstartX = 0;
+let touchstartY = 0;
+let touchendX = 0;
+let touchendY = 0;
+
+const limit = Math.tan(45 * 1.5 / 180 * Math.PI);
+
+
+document.addEventListener('touchstart', function(event) {
+    event.preventDefault()
+    touchstartX = event.changedTouches[0].screenX;
+    touchstartY = event.changedTouches[0].screenY;
+}, false);
+
+document.addEventListener('touchend', function(event) {
+    event.preventDefault()
+    touchendX = event.changedTouches[0].screenX;
+    touchendY = event.changedTouches[0].screenY;
+    handleGesture(event);
+}, false);
+
+function handleGesture(e) {
+    let x = touchendX - touchstartX;
+    let y = touchendY - touchstartY;
+    let xy = Math.abs(x / y);
+    let yx = Math.abs(y / x);
+    if (Math.abs(x) > treshold || Math.abs(y) > treshold || inputDir.x === 0) {
+        if (yx <= limit) {
+            if (x < 0) {
+                console.log("left");
+                if (inputDir.x === 0) {
+                    inputDir.x = -1;
+                    inputDir.y = 0;
+                };
+            } else {
+                console.log("right");
+                if (inputDir.s === 0) {
+                    inputDir.x = 1;
+                    inputDir.y = 0;
+                }
+            }
+        }
+        if (xy <= limit) {
+            if (y < 0) {
+                console.log("top");
+                if (inputDir.y === 0) {
+
+                    inputDir.y = -1;
+                    inputDir.x = 0;
+                }
+            } else {
+
+                console.log("bottom");
+                if (inputDir.y === 0) {
+                    inputDir.y = 1;
+                    inputDir.x = 0;
+                }
+            }
+        }
+    } else {
+        console.log("tap");
+    }
+}
