@@ -168,7 +168,7 @@ window.addEventListener('keydown', e => {
     }
 
 });
-
+// adding touch events
 
 
 let pageWidth = window.innerWidth || document.body.clientWidth;
@@ -209,7 +209,7 @@ function handleGesture(e) {
                 };
             } else {
                 console.log("right");
-                if (inputDir.s === 0) {
+                if (inputDir.x=== 0) {
                     inputDir.x = 1;
                     inputDir.y = 0;
                 }
