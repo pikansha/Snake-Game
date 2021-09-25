@@ -181,13 +181,13 @@ let touchendY = 0;
 const limit = Math.tan(45 * 1.5 / 180 * Math.PI);
 
 
-document.addEventListener('touchstart', function(event) {
+window.addEventListener('touchstart', function(event) {
     event.preventDefault()
     touchstartX = event.changedTouches[0].screenX;
     touchstartY = event.changedTouches[0].screenY;
 }, false);
 
-document.addEventListener('touchend', function(event) {
+window.addEventListener('touchend', function(event) {
     event.preventDefault()
     touchendX = event.changedTouches[0].screenX;
     touchendY = event.changedTouches[0].screenY;
