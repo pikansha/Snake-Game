@@ -209,10 +209,10 @@ function handleGesture(e) {
                 }
             } else {
                 console.log("right");
-                if (inputDir.x=== 0) {
+              //  if (inputDir.x=== 0) {
                     inputDir.x = 1;
                     inputDir.y = 0;
-                }
+              //  }
             }
         }
         if (xy <= limit) {
