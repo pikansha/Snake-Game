@@ -50,6 +50,26 @@
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Styles */
+    #board {
+        top: 40px;
+        padding: 2px 2px;
+        padding-right: 4px;
+        width: fit-content;
+        height: fit-content;
+    }
+    #HighscoreBox {
+        font-size: small;
+        color: rgb(141, 19, 19);
+    }
+    #scoreBox {
+        top: 29px;
+        font-size: small;
+        right: auto;
+        color: red;
+    }
+}
 
 .head {
     /* background-color: brown; */
