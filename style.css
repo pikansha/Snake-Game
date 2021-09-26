@@ -50,25 +50,7 @@
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
 }
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    /* Styles */
-    #board {
-         top: 40px;
-        width: 80vmin;
-        height: 80vmin;
-    }
-    #HighscoreBox {
-        font-size: large;
-        color: rgb(141, 19, 19);
-    }
-    #scoreBox {
-        top: 29px;
-        font-size: large;
-        right: auto;
-        color: red;
-    }
-} */
-
+ 
 .head {
     /* background-color: brown; */
     width: 32px;
