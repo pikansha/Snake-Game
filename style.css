@@ -54,16 +54,16 @@
     /* Styles */
     #board {
          top: 40px;
-        width: 90vmin;
+        width: 80vmin;
         height: 80vmin;
     }
     #HighscoreBox {
-        font-size: small;
+        font-size: large;
         color: rgb(141, 19, 19);
     }
     #scoreBox {
         top: 29px;
-        font-size: small;
+        font-size: large;
         right: auto;
         color: red;
     }
