@@ -50,7 +50,7 @@
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /* Styles */
     #board {
          top: 40px;
@@ -67,7 +67,7 @@
         right: auto;
         color: red;
     }
-}
+} */
 
 .head {
     /* background-color: brown; */
