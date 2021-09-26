@@ -53,11 +53,9 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /* Styles */
     #board {
-        top: 40px;
-        padding: 2px 2px;
-        padding-right: 4px;
-        width: fit-content;
-        height: fit-content;
+         top: 40px;
+        width: 90vmin;
+        height: 100vmin;
     }
     #HighscoreBox {
         font-size: small;
