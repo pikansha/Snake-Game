@@ -45,12 +45,15 @@
     border: 2px solid black;
     box-shadow: 5px 5px 6px #08ee26;
     position: absolute;
-/*     left: 40%; */
+    /* left: 40%; */
     display: grid;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
 }
- 
+
+
+
+
 .head {
     /* background-color: brown; */
     width: 32px;
